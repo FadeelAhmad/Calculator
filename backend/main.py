@@ -26,6 +26,7 @@ def calculate(req: EvaluateRequest):
     try:
         allowed_names = {
             "sin": math.sin, "cos": math.cos, "tan": math.tan,
+            "asin": math.asin, "acos": math.acos, "atan": math.atan,
             "sqrt": math.sqrt, "log": math.log, "log10": math.log10,
             "pi": math.pi, "e": math.e, "abs": abs
         }
@@ -47,7 +48,8 @@ def graph(req: GraphRequest):
         
         allowed_names = {
             "sin": math.sin, "cos": math.cos, "tan": math.tan,
-            "sqrt": math.sqrt, "log": math.log, "pi": math.pi,
+            "asin": math.asin, "acos": math.acos, "atan": math.atan,
+            "sqrt": math.sqrt, "log": math.log, "log10": math.log10, "pi": math.pi,
             "e": math.e, "abs": abs
         }
         
